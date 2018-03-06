@@ -1,0 +1,23 @@
+syntax = "proto3"; 
+
+option optimize_for = LITE_RUNTIME;
+option java_package = "com.zyyApp.Netty.ServerTest.Message.protocol";
+
+message ping { 
+}
+
+message reqlogin { 
+  string playerName = 1; 
+}
+
+message reslogin { 
+  int64 playerId = 1;
+}
+
+message reqQuit {
+}
+
+message resQuit {
+  int64 playerId = 1;
+}
+
